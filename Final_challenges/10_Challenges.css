@@ -1,0 +1,173 @@
+@media screen and (max-width: 600px) {
+    p {
+        color: rgb(12, 170, 209);
+    }
+}
+
+
+
+/*Challenge 5*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+}
+/*End Challenge 5*/
+
+/*Challenge 1*/
+.pic1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.pic2 {
+    display: block;
+    filter: grayscale(100%);
+}
+
+.pic3 {
+    border-radius: 8px;
+}
+/*End Challenge 1*/
+
+/*Challenge 3*/
+table, th, td {
+    border: 1px solid;
+    padding: 8px;
+}
+
+th {
+    background-color: aqua;
+}
+
+table {
+    border-collapse: collapse;
+    width: 15%;
+}
+/*End Challenge 3*/
+
+/*Challenge 4*/
+.img_container {
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+
+.center {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*End Challenge 4*/
+
+/*Challenge 6*/
+.row {
+    display: flex;
+    width: 50%;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    background-color: #aaa;
+    height: 200px;
+
+}
+
+.column p, .column h3 {
+    color: aquamarine;
+}
+/*End Challenge 6*/
+
+/*Challenge 7*/
+.seven p:hover{
+    color: red;
+}
+/*End Challenge 7*/
+
+/*Challenge 8*/
+.container {
+    position: relative;
+    width: 50%
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*End Challenge 8*/
+
+/*Challenge 9 is just html*/
+
+/*Challenge 10*/
+.video {
+    position: relative;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px
+}
+/*End Challenge 10*/
+
+/*Challenge 2*/
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+/*End Challenge 2*/
