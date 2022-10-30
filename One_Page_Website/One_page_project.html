@@ -3,7 +3,9 @@
 	<head>
 		<title>One Page Project</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src="JS/one_page_project.js"></script>
 	</head>
 	<body>
 	
@@ -36,6 +38,66 @@
 					<p>Zoroark!</p>
 					<img src="./images/Zoroark.png">
 				</div>
+<p> Adding in a Lightbox</p>
+				<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="images/img_nature.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="300px">
+	</div>
+	<div class="column">
+	  <img src="images/img_snow.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="300px">
+	</div>
+	<div class="column">
+	  <img src="images/img_mountains.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="300px">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 3</div>
+		<img src="images/img_nature_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 3</div>
+		<img src="images/img_snow_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 3</div>
+		<img src="images/img_mountains_wide.jpg" style="width:100%">
+	  </div>
+
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images/img_nature.jpg" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/img_snow.jpg" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/img_mountains.jpg" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+
+	</div>
+  </div>
+  <!--End Lightbox-->
 			<!--Photos here-->
 		</div>
 		
